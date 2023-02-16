@@ -51,10 +51,6 @@
     animal: 'dog',
   };
 
-  interface Type<L,R>  {
-    obj:L;
-    string:R;
-}
   function getValue<T, K extends keyof T>(obj:T,key:K):T[K] {
     return obj[key];
   }
